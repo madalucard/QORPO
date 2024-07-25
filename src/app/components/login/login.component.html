@@ -1,3 +1,9 @@
 <div class="column full-center">
-  <p-button label="CONNECT WALLET" />
+  <div class="login-container column align-center">
+    <h1>Login</h1>
+    <button (click)="connectWallet()">Connect Wallet</button>
+    <h3 *ngIf="account">
+      {{ account }}
+    </h3>
+  </div>
 </div>
