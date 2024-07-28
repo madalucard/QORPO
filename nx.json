@@ -31,5 +31,6 @@
       "!{projectRoot}/tsconfig.spec.json",
       "!{projectRoot}/**/*.spec.[jt]s"
     ]
-  }
+  },
+  "nxCloudAccessToken": "MTg4ZTIwMzUtN2FlNi00MTRiLTgwNzUtNjcxNDhkODg1NGNmfHJlYWQtd3JpdGU="
 }
