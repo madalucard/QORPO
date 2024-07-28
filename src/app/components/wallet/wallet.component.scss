@@ -1,6 +1,11 @@
 .wallet-container {
   width: 1920px;
-  background: #16121b;
+  background: radial-gradient(
+    ellipse 100% 100%,
+    #22192a 25%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: relative;
   .header {
     margin: 30px 50px;
     .logo {
@@ -49,6 +54,20 @@
         margin-left: 15px;
       }
     }
+  }
+  .main-container {
+    .wallet {
+    }
+    .call-to-action {
+      margin-top: 170px;
+      margin-bottom: 200px;
+      z-index: 2;
+    }
+  }
+  .bg-img {
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
   }
 }
 

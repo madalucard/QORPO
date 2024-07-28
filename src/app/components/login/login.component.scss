@@ -2,6 +2,11 @@
   width: 1920px;
   height: 1080px;
   background: #16121b;
+  background: radial-gradient(
+    ellipse 100% 100%,
+    #22192a 25%,
+    rgba(0, 0, 0, 1) 100%
+  );
   display: flex;
 
   .left-side {
@@ -21,6 +26,7 @@
       position: absolute;
       margin-top: 80px;
       margin-left: 60px;
+      z-index: 3;
     }
     .character {
       position: absolute;
@@ -28,6 +34,33 @@
       height: 2539.27px;
       top: 28.29px;
       left: -427.42px;
+      z-index: 3;
+    }
+
+    .smoke-aura {
+      position: absolute;
+      width: 2445.32px;
+      height: 1473.41px;
+      top: 16%;
+      left: -70%;
+      transform: rotate(233deg);
+      z-index: 2;
+    }
+    .smoke-aura-2 {
+      position: absolute;
+      width: 2445.32px;
+      height: 1473.41px;
+      top: -26%;
+      left: -61%;
+      transform: rotate(250deg);
+      z-index: 2;
+    }
+    .black-gradient {
+      position: absolute;
+      height: 1920px;
+      width: 1920px;
+      left: -45%;
+      background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     }
   }
 
