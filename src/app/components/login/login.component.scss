@@ -1,0 +1,49 @@
+.login-container {
+  width: 1920px;
+  height: 1080px;
+  background: #16121b;
+  display: flex;
+
+  .left-side {
+    flex: 0 0 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    .bg-city {
+      position: absolute;
+      top: 0;
+      left: -84%;
+      max-width: none;
+    }
+    .qorpo-logo {
+      position: absolute;
+      margin-top: 80px;
+      margin-left: 60px;
+    }
+    .character {
+      position: absolute;
+      width: 2142.51px;
+      height: 2539.27px;
+      top: 28.29px;
+      left: -427.42px;
+    }
+  }
+
+  .right-side {
+    color: white;
+    flex: 0 0 50%;
+    height: 100%;
+    p.login-text {
+      font-family: Days One;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 33px;
+      text-align: center;
+    }
+    button.button-connect {
+      padding: 13px 150px;
+    }
+  }
+}

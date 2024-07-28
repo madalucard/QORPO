@@ -1,9 +1,39 @@
-<div class="column full-center">
-  <div class="login-container column align-center">
-    <h1>Login</h1>
-    <button (click)="connectWallet()">Connect Wallet</button>
-    <h3 *ngIf="account">
-      {{ account }}
-    </h3>
+<div class="login-container row">
+  <div class="left-side">
+    <img
+      class="bg-city"
+      src="../../../assets/images/bg-city.png"
+      alt="bg-city"
+      width="1771"
+      height="1771"
+    />
+    <img
+      class="character mt-25"
+      src="../../../assets/images/character.png"
+      alt="qorpo logo"
+      width="207"
+      height="88"
+    />
+    <img
+      class="qorpo-logo mt-25"
+      src="../../../assets/images/Qorpo logo.png"
+      alt="qorpo logo"
+      width="207"
+      height="88"
+    />
+  </div>
+  <div class="right-side column full-center">
+    <div class="column align-center">
+      <p class="login-text mb-25">LOGIN</p>
+      <button
+        class="button-base button-green button-connect mt-25"
+        (click)="connectWallet()"
+      >
+        CONNECT WALLET
+      </button>
+      <h3 *ngIf="account">
+        {{ account }}
+      </h3>
+    </div>
   </div>
 </div>

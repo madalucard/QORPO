@@ -20,7 +20,7 @@ export class LoginComponent {
     try {
       await this.authService.connectWallet();
       // Update the account property if the connection is successful
-      this.account = this.authService.accounts[0] || null;
+      this.account = this.authService.getAccount() || null;
       this.errorMessage = null; // Clear any previous errors
 
       if (this.account) {

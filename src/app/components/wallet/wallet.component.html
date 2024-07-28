@@ -1,1 +1,43 @@
-<p>wallet works!</p>
+<div class="wallet-container column">
+  <div class="header row align-center space-between">
+    <div class="logo">
+      <img
+        class="qorpo-logo"
+        src="../../../assets/images/Qorpo logo.png"
+        alt="qorpo logo"
+        width="207"
+        height="88"
+      />
+    </div>
+    <div class="balance-container row">
+      <div class="balance white-text row full-center">
+        <div class="circle"></div>
+        <p>{{ getBalance() | number : "1.3-3" }} $ETH</p>
+        <div class="arrow">
+          <img
+            class="arrow-svg"
+            src="../../../assets/images/arrow-right-white.svg"
+            alt="arrow-svg"
+            width="20"
+            height="20"
+          />
+        </div>
+      </div>
+      <div class="address row white-text row full-center">
+        <p>{{ address | truncate }}</p>
+        <div class="user" (click)="disconnectWallet()">
+          <img src="../../../assets/images/avatar.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-container column align-center">
+    <div class="wallet row gap-1">
+      <img src="../../../assets/images/wallet.png" alt="Wallet" />
+      <img src="../../../assets/images/Curencies.png" alt="Currencies" />
+    </div>
+    <div class="call-to-action row">
+      <img src="../../../assets/images/call.png" alt="Call to action" />
+    </div>
+  </div>
+</div>

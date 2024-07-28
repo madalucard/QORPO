@@ -1,0 +1,57 @@
+.wallet-container {
+  width: 1920px;
+  background: #16121b;
+  .header {
+    margin: 30px 50px;
+    .logo {
+    }
+    .balance-container {
+      height: 56px;
+      .balance {
+        gap: 15px;
+        width: 257px;
+        height: 56px;
+        border-radius: 0% 10px 20px 10px;
+        border: 1px solid;
+        background: linear-gradient(
+          0deg,
+          rgba(115, 51, 255, 1) 44%,
+          rgba(172, 134, 254, 1) 100%
+        );
+        border-image-source: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(255, 255, 255, 0) 134.03%
+        );
+
+        font-family: Red Hat Display;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 38px;
+        .circle {
+          background-color: #449b00;
+          width: 10px;
+          height: 10px;
+          border-radius: 3px;
+        }
+        .arrow {
+          margin-top: 5px;
+          transform: rotate(-45deg);
+          opacity: 0.7;
+        }
+      }
+      .address {
+        width: 174px;
+        margin-left: 30px;
+      }
+      .user {
+        width: 50px;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.white-text {
+  color: white;
+}
